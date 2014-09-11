@@ -8,7 +8,7 @@ html, body {
 body {
 	background-image: url('images/background_img.png');
 	min-height: 973px; /* @todo remove that */
-	font-family: tahoma, sans-serif, sans;
+	font-family: Tahoma, sans-serif, sans;
 }
 
 html, a {
@@ -47,6 +47,7 @@ header h1 {
 header h1 .le-logo {
 	margin-top: 46px;
 	margin-bottom: 12px;
+	margin-right: 13px;
 }
 
 header nav {
@@ -108,7 +109,7 @@ nav a {
 
 	border-radius: 10px;
 
-	font-family: armata;
+	font-family: armata, sans;
 	font-size: 13px;
 	color: white;
 	letter-spacing: 1px;
@@ -127,6 +128,7 @@ nav a {
 	O))       O))O))         O))O))O))      O))
  */
 
+
 main {
 	padding: 10px 0;
 	overflow: auto;
@@ -141,12 +143,24 @@ main article {
 
 main aside {
 	float: left;
-	width: 250;
+	width: 240px;
+	padding-right: 10px;
 }
 
 article footer {
 	text-align: right;
 }
+
+article h1 {
+	font-family: armata, sans;
+	color: #bebeb2;
+	font-size: 25px;
+	font-weight: normal;
+	text-transform: uppercase;
+	background-image: url('images/background_title.png');
+	margin-bottom: 30px;
+}
+
 
 /*
 	O))))))))    O))))         O))))     O))) O))))))O))))))))O)))))))
@@ -158,15 +172,22 @@ article footer {
 	O))          O))))         O))))          O))    O))))))))O))      O))
  */
 
-footer > div {
-	display: inline-block;
+
+body > footer {
 	height: 235px;
+	position: relative;
+}
+
+body > footer > div {
+	display: inline-block;
 	vertical-align: top;
 }
 
 .le-bloc-contact {
 	box-shadow: -4px 0px 10px -10px black;
 	padding-left: 30px;
+	width: 220px;
+	margin-right: 30px;
 }
 
 .le-bloc-contact h1 {
@@ -181,9 +202,9 @@ footer > div {
 	text-transform: uppercase;
 	color: white;
 	font-size: 16px;
-	width: 220px;
 	margin-top: 20px;
 	margin-bottom: 0;
+	margin-right: -40px;
 }
 
 .le-bloc-contact h1 + p {
@@ -210,6 +231,17 @@ footer > div {
 }
 
 .le-bloc-addresse {
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 15px;
+}
+
+.le-bloc-addresse address {
+	margin-bottom: 15px;
+}
+
+.le-bloc-adoption {
+	float: right;
 }
 
 .le-bloc-adoption img {
@@ -219,6 +251,7 @@ footer > div {
 }
 
 .le-bloc-copyright {
+	clear: both;
 	float: right;
 }
 
@@ -228,4 +261,38 @@ footer > div {
 
 .le-bloc-copyright a:hover {
 	text-decoration: underline;
+}
+
+body > footer .bouton {
+	background-color: #9c9c9c;
+	font-size: 12px;
+	color: white;
+	padding: 0 22px;
+	display: inline-block;
+	line-height: 30px;
+	text-shadow: 0 0 2px #565656;
+	box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.8);
+	float: right;
+	margin-top: 5px;
+}
+
+.bouton:hover {
+	text-decoration: underline;
+}
+
+
+/*
+	O))O)))     O))O)))))    O))))))))O))      O))
+	O))O) O))   O))O))   O)) O))       O))   O))
+	O))O)) O))  O))O))    O))O))        O)) O))
+	O))O))  O)) O))O))    O))O))))))      O))
+	O))O))   O) O))O))    O))O))        O)) O))
+	O))O))    O) ))O))   O)) O))       O))   O))
+	O))O))      O))O)))))    O))))))))O))      O))
+*/
+
+
+.la-page-index aside {
+	text-align: center;
+	padding-top: 30px;
 }
