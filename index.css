@@ -134,24 +134,28 @@ main {
 	overflow: auto;
 }
 
-main article {
-	float: right;
-	width: 650px;
-	height: 450px;
-	overflow: auto;
-}
-
 main aside {
 	float: left;
 	width: 240px;
 	padding-right: 10px;
 }
 
-article footer {
+main article {
+	float: right;
+	width: 890px;
+	height: 450px;
+	overflow: auto;
+}
+
+main aside ~ article {
+	width: 650px;
+}
+
+main article footer {
 	text-align: right;
 }
 
-article h1 {
+main article h1 {
 	font-family: armata, sans;
 	color: #bebeb2;
 	font-size: 25px;
@@ -159,6 +163,11 @@ article h1 {
 	text-transform: uppercase;
 	background-image: url('images/background_title.png');
 	margin-bottom: 30px;
+	padding-left: 240px;
+}
+
+main aside ~ article h1 {
+	padding-left: 0;
 }
 
 
@@ -295,4 +304,48 @@ body > footer .bouton {
 .la-page-index aside {
 	text-align: center;
 	padding-top: 30px;
+}
+
+/*
+	O))      O))O))))))))O)))     O))  O)) O)         O))     O))O))) O))))))O))O))      O))))))))  O)) O)
+	O))      O))O))      O) O))   O))O))    O))       O))     O))     O))    O))O))      O))      O))    O))
+	O))      O))O))      O)) O))  O)) O))             O))     O))     O))    O))O))      O))       O))
+	O))      O))O))))))  O))  O)) O))   O))           O))     O))     O))    O))O))      O))))))     O))
+	O))      O))O))      O))   O) O))      O))        O))     O))     O))    O))O))      O))            O))
+	O))      O))O))      O))    O) ))O))    O))       O))     O))     O))    O))O))      O))      O))    O))
+	O))))))))O))O))))))))O))      O))  O)) O)           O)))))        O))    O))O))))))))O))))))))  O)) O)
+*/
+
+.bloc-lien-utile {
+	display: inline-block;
+	width: 420px;
+	overflow: auto;
+	margin: 50px 10px 10px 10px;
+}
+
+.logo-lien-utile {
+	display: block;
+	float:left;
+	width: 120px;
+	max-width: 110px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	box-shadow: 0 0 2px #ccc;
+	border-radius: 10px;
+	margin: 5px;
+}
+
+.description-lien-utile {
+	float: right;
+	width: 290px;
+	margin: 10px 0 10px 10px;
+}
+
+.lien-utile {
+	clear: right;
+	float: right;
+	margin-top: 0.5em;
 }
