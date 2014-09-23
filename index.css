@@ -5,16 +5,19 @@ html, body {
 	padding: 0;
 }
 
+html {
+	font-size: 14px;
+}
+
+html, a {
+	color: #6a6a67;
+	text-decoration: none;
+}
+
 body {
 	background-image: url('images/background_img.png');
 	min-height: 973px; /* @todo remove that */
 	font-family: Tahoma, sans-serif, sans;
-}
-
-html, a {
-	font-size: 14px;
-	color: #6a6a67;
-	text-decoration: none;
 }
 
 body > header, body > main, body > footer {
@@ -306,6 +309,7 @@ body > footer .bouton {
 	padding-top: 30px;
 }
 
+
 /*
 	O))      O))O))))))))O)))     O))  O)) O)         O))     O))O))) O))))))O))O))      O))))))))  O)) O)
 	O))      O))O))      O) O))   O))O))    O))       O))     O))     O))    O))O))      O))      O))    O))
@@ -315,6 +319,7 @@ body > footer .bouton {
 	O))      O))O))      O))    O) ))O))    O))       O))     O))     O))    O))O))      O))      O))    O))
 	O))))))))O))O))))))))O))      O))  O)) O)           O)))))        O))    O))O))))))))O))))))))  O)) O)
 */
+
 
 .bloc-lien-utile {
 	display: inline-block;
@@ -348,4 +353,79 @@ body > footer .bouton {
 	clear: right;
 	float: right;
 	margin-top: 0.5em;
+}
+
+
+/*
+	O)))))                                                                        O))O))                   O))                     O))
+	O))   O))                                   O)                                O)) O)                   O))   O)            O)  O))
+	O))    O))   O))    O))) O)) O))    O))       O)) O))     O))     O))))       O))      O))       O)))O)O) O)   O))     O))   O)O) O)
+	O))    O)) O))  O))  O))  O)  O)) O))  O)) O)) O))  O)) O)   O)) O))      O)) O))    O))  O))  O))     O))  O)) O))   O)) O))  O))
+	O))    O))O))    O)) O))  O)  O))O))   O)) O)) O))  O))O))))) O))  O)))  O)   O))   O))   O)) O))      O))  O))  O)) O))  O))  O))
+	O))   O))  O))  O))  O))  O)  O))O))   O)) O)) O))  O))O)            O)) O)   O))   O))   O))  O))     O))  O))   O)O))   O))  O))
+	O)))))       O))    O)))  O)  O))  O)) O)))O))O)))  O))  O))))   O)) O))  O)) O))     O)) O)))   O)))   O)) O))    O))    O))   O))
+*/
+
+
+.la-page-domaines-d-activité article {
+	display: none;
+}
+
+.la-page-domaines-d-activité .article-en-cours {
+	display: block;
+}
+
+
+/*
+	O))       O))O))))))))O)))     O))O))     O))
+	O) O))   O)))O))      O) O))   O))O))     O))
+	O)) O)) O O))O))      O)) O))  O))O))     O))
+	O))  O))  O))O))))))  O))  O)) O))O))     O))
+	O))   O)  O))O))      O))   O) O))O))     O))
+	O))       O))O))      O))    O) ))O))     O))
+	O))       O))O))))))))O))      O))  O)))))
+*/
+
+.menus {
+	padding: 0;
+	background-image: url('images/background_onglet.png');
+	height: 420px;
+	border-radius: 10px 10px 0 0;
+}
+
+.menus, .menus a {
+	color: #928e88;
+}
+
+.menus > li {
+	list-style: none;
+}
+
+.menu .elements-menu {
+	display: none;
+}
+
+.elements-menu li {
+	margin-bottom: 10px;
+}
+
+.menu.menu-actif .elements-menu {
+	display: block;
+}
+
+.menu li {
+	list-style: disc;
+}
+
+.titre-menu {
+	text-transform: uppercase;
+	font-size: 16px;
+	background-color: #eeeeee;
+	border-radius: 10px;
+	padding: 5px;
+	text-align: center;
+}
+
+.menu-bascule {
+	cursor: pointer;
 }
