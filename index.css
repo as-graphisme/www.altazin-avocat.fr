@@ -33,6 +33,23 @@ body > header, body > main, body > footer {
 	display: block;
 }
 
+.bouton {
+	background-color: #9c9c9c;
+	font-size: 12px;
+	color: white;
+	padding: 0 22px;
+	display: inline-block;
+	line-height: 30px;
+	text-shadow: 0 0 2px #565656;
+	box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.8);
+	margin: 3px;
+	border: 0;
+}
+
+.bouton:hover {
+	text-decoration: underline;
+}
+
 
 /*
 	O))     O))O))))))))      O)       O)))))    O))))))))O)))))))
@@ -283,20 +300,7 @@ body > footer > div {
 }
 
 body > footer .bouton {
-	background-color: #9c9c9c;
-	font-size: 12px;
-	color: white;
-	padding: 0 22px;
-	display: inline-block;
-	line-height: 30px;
-	text-shadow: 0 0 2px #565656;
-	box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.8);
 	float: right;
-	margin-top: 5px;
-}
-
-.bouton:hover {
-	text-decoration: underline;
 }
 
 
