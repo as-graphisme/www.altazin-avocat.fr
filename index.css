@@ -25,6 +25,13 @@ body > header, body > main, body > footer {
 	margin: 0 auto;
 }
 
+.page-multi-articles article {
+	display: none;
+}
+
+.page-multi-articles .article-en-cours {
+	display: block;
+}
 
 
 /*
@@ -353,26 +360,6 @@ body > footer .bouton {
 	clear: right;
 	float: right;
 	margin-top: 0.5em;
-}
-
-
-/*
-	O)))))                                                                        O))O))                   O))                     O))
-	O))   O))                                   O)                                O)) O)                   O))   O)            O)  O))
-	O))    O))   O))    O))) O)) O))    O))       O)) O))     O))     O))))       O))      O))       O)))O)O) O)   O))     O))   O)O) O)
-	O))    O)) O))  O))  O))  O)  O)) O))  O)) O)) O))  O)) O)   O)) O))      O)) O))    O))  O))  O))     O))  O)) O))   O)) O))  O))
-	O))    O))O))    O)) O))  O)  O))O))   O)) O)) O))  O))O))))) O))  O)))  O)   O))   O))   O)) O))      O))  O))  O)) O))  O))  O))
-	O))   O))  O))  O))  O))  O)  O))O))   O)) O)) O))  O))O)            O)) O)   O))   O))   O))  O))     O))  O))   O)O))   O))  O))
-	O)))))       O))    O)))  O)  O))  O)) O)))O))O)))  O))  O))))   O)) O))  O)) O))     O)) O)))   O)))   O)) O))    O))    O))   O))
-*/
-
-
-.la-page-domaines-d-activité article {
-	display: none;
-}
-
-.la-page-domaines-d-activité .article-en-cours {
-	display: block;
 }
 
 

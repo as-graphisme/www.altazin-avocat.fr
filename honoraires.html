@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="la-page-honoraires">
+<html class="la-page-honoraires page-multi-articles">
 <head>
 	<title>Altazin Guillaume Avocat Boulogne-sur-mer</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
@@ -27,11 +27,85 @@
 
 	<main>
 		<aside>
-			<img alt="Élodie Altazin Guillaume" src="images/elodie_altazin_guillaume.png">
+			<ul class="menus">
+				<li>
+					<h1 class="titre-menu">
+						<a
+							class="lien-article menu-bascule"
+							href="#Aide juridictionnelle"
+							data-article-identifier="aide-juridictionnelle"
+						>
+							Aide juridictionnelle
+						</a>
+					</h1>
+				</li>
+				<li>
+					<h1 class="titre-menu">
+						<a
+							class="lien-article menu-bascule"
+							href="#Protection juridique"
+							data-article-identifier="protection-juridique"
+						>
+							Protection juridique
+						</a>
+					</h1>
+				</li>
+				<li>
+					<h1 class="titre-menu">
+						<a
+							class="lien-article menu-bascule"
+							href="#Condamnation dépens"
+							data-article-identifier="condamnation-depens"
+						>
+							Condamnation dépens
+						</a>
+					</h1>
+				</li>
+			</ul>
 		</aside>
 
-		<article>
-			<h1>Honoraires</h1>
+		<article data-article-identifier="aide-juridictionnelle" class="article-en-cours">
+			<h1>Honoraires - Aide juridictionnelle</h1>
+
+			<p>
+				Notre engagement&thinsp;: <em>la transparence et la juste rémunération du travail</em>.
+			</p>
+
+			<p>
+				Vous hésitez à engager une procédure parce que vous pensez vous ruiner ?
+				Connaissez vous <strong>l’aide juridictionnelle</strong> ? Avez-vous pensez
+				à regarder votre <strong>assurance protection juridique</strong> ?
+				Savez-vous ce qu’est <strong>la condamnation aux dépens</strong> de votre adversaire ?
+			</p>
+
+			<p>
+				Venez échanger avec un membre de notre équipe lors d’un premier rendez-vous
+				pour déterminer avec lui le coup de votre affaire.
+			</p>
+		</article>
+
+		<article data-article-identifier="protection-juridique">
+			<h1>Honoraires - Protection juridique</h1>
+
+			<p>
+				Notre engagement&thinsp;: <em>la transparence et la juste rémunération du travail</em>.
+			</p>
+
+			<p>
+				Vous hésitez à engager une procédure parce que vous pensez vous ruiner ?
+				Connaissez vous <strong>l’aide juridictionnelle</strong> ? Avez-vous pensez
+				à regarder votre <strong>assurance protection juridique</strong> ?
+				Savez-vous ce qu’est <strong>la condamnation aux dépens</strong> de votre adversaire ?
+			</p>
+
+			<p>
+				Venez échanger avec un membre de notre équipe lors d’un premier rendez-vous
+				pour déterminer avec lui le coup de votre affaire.
+			</p>
+		</article>
+
+		<article data-article-identifier="condamnation-depens">
+			<h1>Honoraires - Condamnation dépens</h1>
 
 			<p>
 				Notre engagement&thinsp;: <em>la transparence et la juste rémunération du travail</em>.
@@ -81,5 +155,8 @@
 			<small>© 2014 <a href="http://www.asgraphisme.fr/">As Graphisme</a></small>
 		</p>
 	</footer>
+
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
