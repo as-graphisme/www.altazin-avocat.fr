@@ -388,6 +388,10 @@ body > footer .bouton {
 	color: #928e88;
 }
 
+.menus h1 > a {
+	display: block;
+}
+
 .menus > li {
 	list-style: none;
 }
